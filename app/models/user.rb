@@ -9,6 +9,9 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me,
                   :role
 
+  has_one :profile, :dependent => :destroy
+  after_save :create_profile
+
   ROLES = %w[admin holder collector user]
 
   ROLES.each do |role_name|
@@ -16,4 +19,5 @@ class User < ActiveRecord::Base
       role == role_name.to_s
     end
   end
+
 end
