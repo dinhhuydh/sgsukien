@@ -3,3 +3,12 @@
 
 vn:
   hello: "Chào thế giới"
+  formtastic:
+    labels:
+      event:
+        name: 'Tên sự kiện'
+        datetime: 'Ngày giờ'
+        address: 'Địa chỉ'
+        message: 'Thông điệp'
+        description: 'Mô tả'
+      

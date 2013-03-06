@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
 
   has_one :profile, :dependent => :destroy
   after_save :create_profile
+  has_many :events, :dependent => :destroy
 
   ROLES = %w[admin holder collector user]
 
