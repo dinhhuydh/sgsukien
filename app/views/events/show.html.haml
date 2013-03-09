@@ -5,3 +5,5 @@
 %br
 = t('event.address')
 = @event.address
+- @event.assets.each do |asset|
+  = image_tag asset.image.url

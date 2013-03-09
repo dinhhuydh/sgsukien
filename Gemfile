@@ -14,6 +14,7 @@ gem 'haml'
 gem 'decent_exposure'
 gem 'formtastic'
 gem "twitter-bootstrap-rails"
+gem "paperclip", "~> 3.0"
 
 # Gems used only for assets and not required
 # in production environments by default.

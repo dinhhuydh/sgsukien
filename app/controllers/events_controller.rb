@@ -5,6 +5,7 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new 
+    @event.assets.build
   end
 
   def create
