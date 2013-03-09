@@ -1,0 +1,7 @@
+#header
+  = link_to t('header.home'), root_path
+  - if current_user
+    = link_to t('header.events'), '#'
+    = link_to t('header.logout'), '#' 
+  - else
+    = link_to t('header.login'), '#'

@@ -19,3 +19,10 @@ vn:
     message: 'Thông điệp'
     description: 'Mô tả'
     submit: 'Khởi tạo'
+  header:
+    login: 'Đăng nhập'
+    logout: 'Thoát'
+    events: 'Sự kiện'
+    home: 'Trang chủ'
+  footer:
+    copyright: 'Bản quyền'
