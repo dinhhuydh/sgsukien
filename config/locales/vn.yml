@@ -11,4 +11,11 @@ vn:
         address: 'Địa chỉ'
         message: 'Thông điệp'
         description: 'Mô tả'
-      
+  event:
+    name: 'Tên sự kiện'
+    datetime: 'Ngày giờ'
+    address: 'Địa chỉ'
+    image: 'Hình ảnh'
+    message: 'Thông điệp'
+    description: 'Mô tả'
+    submit: 'Khởi tạo'

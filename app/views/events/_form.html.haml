@@ -1,22 +1,21 @@
 = form_for event, url: user_events_path(user, event), :html => { :multipart => true } do |f|
   .fieldset
     .legend
-      = f.label :name
+      = f.label :name, t('event.name')
       = f.text_field :name
-      = f.label :datetime
+      = f.label :datetime, t('event.datetime')
       = f.text_field :datetime
-      = f.label :address
+      = f.label :address, t('event.address')
       = f.text_field :address
     .legend
-      = f.label :assets
+      = f.label :assets, t('event.image')
       = f.fields_for :assets do |event_image_f|
         = event_image_f.file_field :image
-      = f.label :message
+      = f.label :message, t('event.message')
       = f.text_field :message
-      = f.label :description
+      = f.label :description, t('event.description')
       = f.text_area :description
-
-  = f.submit 'Submit', onclick: 'addTimezoneToDateTime()' 
+  = f.submit t('event.submit'), onclick: 'addTimezoneToDateTime()' 
 
 :javascript
   $(document).ready(function() {
