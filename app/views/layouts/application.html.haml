@@ -18,5 +18,8 @@
     #content
       = yield
 
+    -#include gmaps4rail scripts
+    = yield :scripts
+
     .clearfix
     = render 'shared/footer'

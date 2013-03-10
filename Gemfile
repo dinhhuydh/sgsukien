@@ -15,6 +15,7 @@ gem 'decent_exposure'
 gem 'formtastic'
 gem "twitter-bootstrap-rails"
 gem "paperclip", "~> 3.0"
+gem 'gmaps4rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,7 +26,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'execjs'
   gem 'therubyracer', :platforms => :ruby
-  gem "less-rails" 
+  gem "less-rails"
 
   gem 'uglifier', '>= 1.0.3'
 end
