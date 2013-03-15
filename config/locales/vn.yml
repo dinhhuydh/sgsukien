@@ -13,7 +13,8 @@ vn:
   event:
     name: 'Tên sự kiện'
     datetime: 'Ngày giờ'
-    address: 'Địa chỉ'
+    date: Ngày
+    time: Thời gian
     image: 'Hình ảnh'
     message: 'Thông điệp'
     description: 'Mô tả'

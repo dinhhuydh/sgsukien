@@ -1,5 +1,5 @@
 window.addTimezoneToDateTime = () ->
-  datetime = $('form input[id="event_datetime"]').val()
+  date = $('form input[id="event_date"]').val()
+  time = $('form input[id="event_time"]').val()
   timezone = (new Date()).toString().split('GMT')[1]
-  $('form input[id="event_datetime"]').attr('type', 'text')
-  $('form input[id="event_datetime"]').val(datetime + " " + timezone)
+  $('form input[id="event_datetime"]').val(date + " " +time + " " + timezone)
