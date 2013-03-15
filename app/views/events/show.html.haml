@@ -4,8 +4,6 @@
 = t('event.datetime')
 = @event.datetime
 %br
-= t('event.address')
-= @event.address
 = t('event.image')
 - @event.assets.each do |asset|
   = image_tag asset.image.url

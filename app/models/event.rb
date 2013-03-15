@@ -1,9 +1,9 @@
 class Event < ActiveRecord::Base
-  attr_accessible :name, :datetime, :address, :message, :description,
+  attr_accessible :name, :datetime, :message, :description,
                   :assets, :assets_attributes,
                   :location, :location_attributes
 
-  validates_presence_of :name, :datetime, :address
+  validates_presence_of :name
 
   belongs_to :user
   has_many :assets, as: :assetable
