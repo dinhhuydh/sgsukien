@@ -25,5 +25,20 @@
 :javascript
   $(document).ready(function() {
     var eventMap = new EventMap('map-canvas',10.8230989, 106.6296638);
+    bindDateTimeInput();
     google.maps.event.addDomListener(window, 'load', eventMap.initGoogleMap);
   })
+
+  function bindDateTimeInput() {
+    $('#event_time').click(function() {
+      $(this).mobiscroll().time({
+        display: 'inline',
+        mode: 'scroller'
+      });
+    })
+    $('#event_date').click(function() {
+      $(this).mobiscroll().date({
+        display: 'inline',
+      });
+    })
+  }
